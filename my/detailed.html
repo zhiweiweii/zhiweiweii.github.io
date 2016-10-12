@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>电子商城项目</title>
+    <link rel="stylesheet" type="text/css" href="css/bate.css"/>
+</head>
+<body>
+<div id="container">
+    <!--网页头-->
+    <header>
+        <img src="images/Logo.jpg"><img src="images/Logo1.jpg">
+        <div class="headerTip">
+            <span>你好，欢迎来到我的商城！想继续购物？<a href="login.html" class="a_link">[请登录]</a>，新用户？<a href="login.html" class="a_link">[免费注册]</a></span>
+        </div>
+        <div id="headerNav">
+            <ul>
+                <li><a href="">帮助中心</a></li><span>|</span>
+                <li><a href="">客户反馈</a></li><span>|</span>
+                <li><a href="">网站地图</a></li><span>|</span>
+                <li><a href="">加入收藏</a></li>
+                <li id="time" style="width: 120px">2016/10/1 星期六</li>
+            </ul>
+            <marquee direction="up" height="30px" scrollamount="2"><a href="">最新优惠，火热销售中</a></marquee>
+        </div>
+    </header>
+    <!--网页导航栏-->
+    <nav>
+        <div id="nav1" >
+            <ul id="nav1_list">
+                <li><a href="index.html">网站首页</a></li><span>|</span><li><a href="">分类导航</a></li><span>|</span><li><a href="">品牌导航</a></li><span>|</span><li><a href="">购物帮助</a></li><span>|</span><li><a href="">新闻资讯</a></li><span>|</span><li><a href="baojiadan.html">报价单</a></li><span>|</span><li><a href="">发货单</a></li>
+            </ul>
+            <div style="left:280px;" class="nav1">
+                <ul>
+                    <li><a href="">家用电器</a></li>
+                    <li><a href="">手机数码</a></li>
+                    <li><a href="">电脑产品</a></li>
+                    <li><a href="">日用百货</a></li>
+                    <li><a href="">服装鞋帽</a></li>
+                    <li><a href="">运动健康</a></li>
+                </ul>
+            </div>
+            <div style="left:368px" class="nav1">
+                <ul>
+                    <li><a href="">花花公子</a></li>
+                    <li><a href="">风森</a></li>
+                    <li><a href="">南极人</a></li>
+                    <li><a href="">森马</a></li>
+                    <li><a href="">班尼路</a></li>
+                    <li><a href="">更多</a></li>
+                </ul>
+            </div>
+            <div style="left:454px" class="nav1">
+                <ul>
+                    <li><a href="">付款方式</a></li>
+                    <li><a href="">送货方式</a></li>
+                    <li><a href="">售后服务</a></li>
+                    <li><a href="">咨询服务</a></li>
+                    <li><a href="">更多</a></li>
+                </ul>
+            </div>
+            <div style="left:538px" class="nav1">
+                <ul>
+                    <li><a href="">腾讯新闻</a></li>
+                    <li><a href="">新浪新闻</a></li>
+                    <li><a href="">搜狗新闻</a></li>
+                    <li><a href="">更多</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="nav2">
+            <span>商品搜索：</span><select><option>所有分类</option><option>家用电器类</option><option>生活用品类</option><option>服装类</option></select>
+            <input type="text" maxlength="100" style="width:300px" /> <button type="button">搜索</button> <span>高级/组合搜索</span>
+            <div><span>购物车暂时为空</span><a id="jiesuan"  href="">去结算</a><a id="user"  href="">用户中心</a></div>
+        </div>
+    </nav>
+    <!--网页主体内容-->
+    <div id="page">
+        <div id="left_page">
+
+            <div id="user_information" class="left_bottom">
+                <h2>用户信息</h2>
+                <div>
+                    <ul>
+                        <li style="background: url(images/user/1.gif) no-repeat"><a href="">注册/登录</a></li>
+                        <li style="background: url(images/user/1.gif) no-repeat"><a href="login.html">注册/登录</a></li>
+                        <li style="background: url(images/user/8.gif) no-repeat"><a href="">购物车<span>(0)</span></a></li>
+                        <li style="background: url(images/user/10.gif) no-repeat"><a href="">对比框<span>(0)</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h2>浏览历史</h2>
+                <div style="border:1px solid #E34542;border-top: none;min-height: 60px">
+                    <div style="float: left;width: 50px;margin-left: 10px"><img src="images/imgs/p4.jpg" style="width: 50px;height: 50px"></div>
+                    <div style="width: 100px;float: left;margin-left: 20px">
+                        <div><a href="">创维（Skyworth）32英寸液晶电视机</a></div>
+                        <div style="color: red">¥1999元</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--产品详细信息内容-->
+        <div id="detail">
+            <div id="detail_nav">
+                <img class="detailNav_logo" src="images/img/home.gif"><a href="index.html">首页</a><span>>></span><a href="">电脑产品</a><span>>></span><a href="">笔记本</a><span>>></span><span>神舟战神Z7-SL7S4</span>
+            </div>
+            <div id="detail_leftBox" >
+                <div  id="smallBox_1">
+                    <div id="mark"></div>
+                    <div id="floatBox"></div>
+                    <img id="small_img" src="images/computer/computer1.png" >
+                </div>
+                <div id="smallBox_2">
+                    <ul>
+                        <li><img src="images/computer/computer1.png" onmouseover="displayImg(event);" ></li>
+                        <li><img src="images/computer/computer2.png"  onmouseover="displayImg(event);"></li>
+                        <li><img src="images/computer/computer3.png"  onmouseover="displayImg(event);"></li>
+                        <li><img src="images/computer/computer4.png"  onmouseover="displayImg(event);"></li>
+                    </ul>
+                </div>
+                <div id="bigBox">
+                    <img id="big_img" src="images/computer/computer1.png">
+                </div>
+            </div>
+
+            <div id="detail_rightBox" >
+                <div id="detail_title">神舟战神Z7-SL7S4<span>(<a href="">0篇用户评论</a>|<a href="">写评论</a>)</span></div>
+                <div id="detail_content1">
+                    <ul>
+                        <li>商品编号：123456789</li>
+                        <li>商品积分：<span class="red">8800</span><a href="" style="color: #777;padding-left: 20px">积分可以兑换优惠券</a></li>
+                    </ul>
+                </div>
+                <div id="detail_content2">
+                    <ul>
+                        <li>市场价格：<span class="line_through">¥9100元</span></li>
+                        <li>本站价格：<span class="red">¥8800元</span></li>
+                        <li>为你节省：<span class="red">¥300元</span></li>
+                        <li>订购数量：<input type="text" style="width:40px" /></li>
+                    </ul>
+                    <ul id="caozuo">
+                        <li><a href=""><img src="images/img/shoucang.gif"></a></li>
+                        <li><a href=""><img src="images/img/duibi.gif"></a></li>
+                        <li><a href=""><img src="images/img/buy.gif"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="detail_middle" ><span>下一个商品：<a href="" style="color:#777">宏碁4750G 性价比极高的学生本</a></span><div><a href=""><img src="images/pay/alipay_buy.gif"></a><a href=""><img src="images/pay/paypal_buy.gif"></a></div></div>
+            <div id="detail_footer" >
+                <div id="detail_footer_inf">
+                    <div id="detail_tab">
+                        <div class="tab_hover" ><a class="red" href="javascript:void(0)">详细说明</a></div>
+                        <div ><a href="javascript:void(0)">报价</a></div>
+                        <div ><a href="javascript:void(0)">商品评论</a></div>
+                        <div ><a href="javascript:void(0)">付款方式</a></div>
+                        <div ><a href="javascript:void(0)">送货方式</a></div>
+                    </div>
+                     <div id="detail_information" >
+                         <div id="inf_1">
+                             <ul>
+                                 <li>屏幕：15.6英寸</li>
+                                 <li>分辨率： 1920x1080</li>
+                                 <li>CPU主频： 2.6GHz</li>
+                                 <li>核心数： 四核心/八线程</li>
+                                 <li>显卡类型： 双显卡（发烧级独立显卡＋集成显卡）</li>
+                                 <li>显存容量： 6GB</li>
+                                 <li>电池类型： 4芯锂电池</li>
+                                 <li>续航时间： 2-6小时，视具体使用环境而定</li>
+                                 <li>保修政策全国联保，享受三包服务</li>
+                                 <li>质保时间2年</li>
+                                 <li>质保备注主要部件2年，电池6个月，其它部件1年免费保修</li>
+                                 <li>客服电话400-106-9999</li>
+                                 <li>电话备注9:00-18:00（节假日休息）</li>
+                                 <li>详细内容神舟笔记本电脑实行实行客户送修的服务方式，用户自购机之日起（以正式购机发票为准）<a style="color: #00267F" href="">进入官网>></a></li>
+                             </ul>
+                         </div>
+                         <div id="inf_2" style="display: none">
+                             <ul>
+                                 <li></li>
+                                 <li>¥8999元</li>
+                                 <li>神舟战神Z7-SL7S4东莞市经销商报价</li>
+                                 <li>查询底价：请拨打商家电话查询商品底价及促销信息</li>
+                                 <li>更新时间：09-12 18:11</li>
+                             </ul>
+                         </div>
+                         <div id="inf_3" style="display: none">
+                             评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论
+                         </div>
+                         <div id="inf_4" style="display: none">
+                             付款方式
+                         </div>
+                         <div id="inf_5" style="display: none">
+                             送货方式
+                         </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--网页尾-->
+    <footer>
+        <div id="footer_information">
+            <ul>
+                <li class="footer_float">
+                    <h3>关于我们</h3>
+                    <ul>
+                        <li><img src="images/img/dot.gif"><a href="">发展历程</a></li>
+                        <li><img src="images/img/dot.gif"><a href="">联系方式</a></li>
+                        <li><img src="images/img/dot.gif"><a href="">公司介绍</a></li>
+                        <li><img src="images/img/dot.gif"><a href="">企业文化</a></li>
+                    </ul>
+                </li>
+                <li class="footer_float">
+                    <h3>付款方式</h3>
+                    <ul>
+                        <li><img src="images/img/dot.gif"><a href="">银行汇款</a></li>
+                        <li><img src="images/img/dot.gif"><a href="">在线支付</a></li>
+                        <li><img src="images/img/dot.gif"><a href="">微信转账</a></li>
+                        <li><img src="images/img/dot.gif"><a href="">公司转账</a></li>
+                    </ul>
+                </li>
+                <li class="footer_float">
+                    <h3>送货方式</h3>
+                    <ul>
+                        <li><img src="images/img/dot.gif"><a href="">上门自提</a></li>
+                        <li><img src="images/img/dot.gif"><a href="">EMS快递</a></li>
+                        <li><img src="images/img/dot.gif"><a href="">快递发货</a></li>
+                        <li><img src="images/img/dot.gif"><a href="">平邮发货</a></li>
+                    </ul>
+                </li>
+                <li class="footer_float">
+                    <h3>售后服务</h3>
+                    <ul>
+                        <li><img src="images/img/dot.gif"><a href="">质保承诺</a></li>
+                        <li><img src="images/img/dot.gif"><a href="">退换货政策</a></li>
+                        <li><img src="images/img/dot.gif"><a href="">价格保护</a></li>
+                        <li><img src="images/img/dot.gif"><a href="">返修申请</a></li>
+                    </ul>
+                </li>
+                <li class="footer_float">
+                    <h3>购物帮助</h3>
+                    <ul>
+                        <li><img src="images/img/dot.gif"><a href="">用户等级</a></li>
+                        <li><img src="images/img/dot.gif"><a href="">积分获得与使用</a></li>
+                        <li><img src="images/img/dot.gif"><a href="">购物流程</a></li>
+                        <li><img src="images/img/dot.gif"><a href="">常见问题</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div style="text-align: center;color: #666;height: 20px;line-height: 20px;clear: both">
+            <div>淘宝店 易趣店 拍拍店 微信店</div>
+            <div>&copy;2016 All Rights Reserved.版权所有：我的商城有限公司</div>
+            <div>客户服务热线：020-12345678 传真：020-12345678</div>
+            <div>客户服务邮箱：mymark@wei.com</div>
+        </div>
+    </footer>
+    </div>
+</div>
+<script src="js/getTime.js"></script>
+<script>
+    //显示图片
+    function displayImg(e){
+        var e =  e||window.event;
+        var img_small=document.getElementById("small_img");
+        var img_big=document.getElementById("big_img");
+        var obj = e.srcElement?e.srcElement:e.target;
+        var lis=obj.parentNode.parentNode.children;
+        for(var i=0;i<lis.length;i++){
+            lis[i].style.border="1px solid #ccc";
+        }
+        img_small.src=obj.src;
+        img_big.src=obj.src;
+        obj.parentNode.style.border="1px solid #000";
+    }
+    window.onload=function(){
+        //第一张图li的边框黑色
+        var displayLi=document.getElementById("smallBox_2");
+        var li=displayLi.getElementsByTagName("li");
+        li[0].style.border="1px solid #000";
+        /*显示时间的*/
+        var time=document.getElementById("time");
+        time.innerText=getTime();
+        //显示图片
+
+        //放大镜
+        var smallbox=document.getElementById("smallBox_1");
+        var bigbox=document.getElementById("bigBox");
+        var bigimg=document.getElementById("big_img");
+        var floatbox=document.getElementById("floatBox");
+        var markobj=document.getElementById("mark");
+
+        smallbox.onmouseover=function(){
+            bigbox.style.display="block";
+            floatbox.style.display="block";
+        }
+
+        smallbox.onmouseout=function(){
+            bigbox.style.display="none";
+            floatbox.style.display="none";
+        }
+
+        smallbox.onmousemove=function(e) {
+                var even = e || window.event;
+                var left = even.offsetX - floatbox.offsetWidth / 2;
+                var top = even.offsetY - floatbox.offsetHeight / 2;
+                if (left < 0) {
+                    left = 0;
+                }
+                if (top < 0) {
+                    top = 0;
+                }
+                if (left > (smallbox.offsetWidth - floatbox.offsetWidth)) {
+                    left = smallbox.offsetWidth - floatbox.offsetWidth;
+                }
+                if (top > (smallbox.offsetHeight - floatbox.offsetWidth)) {
+                    top = smallbox.offsetHeight - floatbox.offsetHeight;
+                }
+                floatbox.style.left = left + "px";
+                floatbox.style.top = top + "px";
+                bigimg.style.left = (-left * (bigimg.offsetWidth - bigbox.offsetWidth) / (smallbox.offsetWidth - floatbox.offsetWidth)) + "px";
+                bigimg.style.top = (-top * (bigimg.offsetHeight - bigbox.offsetHeight) / (smallbox.offsetHeight - floatbox.offsetHeight)) + "px";
+            }
+
+
+        /*
+        **选项卡
+        */
+        var df=document.getElementById("detail_information");
+        var df_div=df.getElementsByTagName("div");
+        var t=document.getElementById("detail_tab");
+        var tab= t.getElementsByTagName("div");
+        for(var i=0;i<tab.length;i++){
+            tab[i].index=i;
+            tab[i].onmouseover=function(){
+
+                for(var j=0;j<tab.length;j++){
+                    tab[j].className="";
+                    tab[j].firstChild.className="";
+                }
+                for(var k=0;k<tab.length;k++){
+                    df_div[k].style.display="none";
+                }
+                this.className="tab_hover";
+                this.firstChild.className="red";
+                df_div[this.index].style.display="block";
+            }
+        }
+
+
+        /*
+        **display  导航栏的下拉列表
+         */
+        var l=document.getElementById("nav1_list");
+        var lists= l.getElementsByTagName("li");
+        var d1=document.getElementById("nav1");
+        var div_display=d1.getElementsByTagName("div");
+
+        for (var i = 1; i < lists.length - 2; i++) {
+            lists[i].index = i - 1;
+            lists[i].onmouseover = function () {
+                for(var j=0;j<div_display.length;j++){
+                    div_display[j].style.display="none";
+                }
+                        div_display[this.index].style.display = "block";
+                }
+            lists[i].onmouseout = function () {
+                div_display[this.index].style.display = "none";
+            }
+            }
+        for(var i=0;i<div_display.length;i++){
+            div_display[i].onmouseover=function(){
+                this.style.display = "block";
+            }
+            div_display[i].onmouseout=function(){
+                this.style.display = "none";
+            }
+        }
+    }
+</script>
+</body>
+</html>
