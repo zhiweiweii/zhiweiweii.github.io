@@ -206,12 +206,12 @@ $(document).ready(function(){
         $(this).parent().find(".new_hero_text2").hide();
     });
     //快速入口处
-    $("#enter_content a").mouseover(function(){
-        $(this).find(".enter_text").css({"color":"#36AB87"});
-        $(this).find("img").attr({"src":"img/enter_"+parseInt($(this).parent().index()+1)+"1.png"});
+    $("#enter_content .enter_mark").mouseover(function(){
+        $(this).parent().find(".enter_text").css({"color":"#36AB87"});
+        $(this).parent().find("img").attr({"src":"img/enter_"+parseInt($(this).parent().index()+1)+"1.png"});
     }).mouseout(function(){
-            $(this).find(".enter_text").css({"color":"#555555"});
-        $(this).find("img").attr({"src":"img/enter_"+parseInt($(this).parent().index()+1)+".png"});
+            $(this).parent().find(".enter_text").css({"color":"#555555"});
+        $(this).parent().find("img").attr({"src":"img/enter_"+parseInt($(this).parent().index()+1)+".png"});
         }
     );
     //活动中心
