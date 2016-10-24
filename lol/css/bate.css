@@ -215,7 +215,7 @@ img{border: none;}
     font-family: "微软雅黑";color: #555555;background: url(../img/enter.png) no-repeat;background-position:0 12px;clear: both}
 #enter_content li{width: 100px;height: 72px;float: left;position: relative}
 #enter_content .enter_li{width: 94px}
-#enter_content .enter_mark{width: 94px;height: 65px;background-color: #FEFEFE;}
+#enter_content .enter_mark{width: 94px;height: 65px;background-color: #FEFEFE;position: absolute;z-index: 3;opacity: 0;filter: alpha(opacity=0)}
 #enter_content  img{position: absolute;top: 10px;left: 31px}
 #enter_content .enter_text{position: absolute;top: 45px;left: 20px;font-size: 13px;font-family: 微软雅黑;color: #555555}
 #activity{width: 400px;margin-top: 180px;clear: both}
