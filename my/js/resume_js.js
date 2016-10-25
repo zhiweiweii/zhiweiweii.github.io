@@ -135,6 +135,9 @@ window.onload=function(){
     }).mouseout(function(){
         $(this).parent().children(":nth-child(2)").stop(true,false).animate({top:"100px"},200)
     });
+    $("#production_middle a").click(function(){
+        $(this).children().find(".show").hide();
+    });
 
 }
 
