@@ -197,8 +197,8 @@ img{border: none;}
 #kefu_content ul li{overflow: hidden;width: 270px;line-height: 25px;height: 25px;}
 #kefu_content ul li a{color: #333333;overflow: hidden;font-size: 13px}
 #kefu_content .kefu_content1{display: none}
-/**右侧内容，从英雄、皮肤  开始 height: 220px**/
-#hero{height: 220px;width: 400px;}
+/**右侧内容，从英雄、皮肤  **/
+#hero{height: 280px;width: 400px;}
 #hero_header{position:relative;text-indent:35px;width: 400px;height: 50px;margin-bottom: 10px;font-size: 26px;line-height: 50px;font-weight: 600;
     font-family: "微软雅黑";color: #555555;background: url(../img/hero.gif) no-repeat;background-position:0 7px}
 #hero_header span{position:absolute;background: #EFEFEF;text-align: center;height: 26px;line-height:26px;border-radius: 15px;display: block;top:12px;}
@@ -219,24 +219,25 @@ img{border: none;}
 #hero1 .hero1_li{width: 76px}
 #hero1 .hero1_cover{width: 76px;height: 76px;position: absolute;top:0;left:0;background:  #36AB87;opacity:0;filter: alpha(opacity=0);z-index: 3}
 #new_hero .new_hero_cover,#skin .skin_cover{width: 76px;height: 165px;position: absolute;top:0;left:0;background:  #36AB87;opacity:0;filter: alpha(opacity=0);z-index: 3}
-#hero1 #hero1_time{text-align: right;width: 400px;height: 12px;font-size: 12px;color: #A0A0A0;clear: both}
+#hero1 #hero1_time{text-align: right;width: 400px;height: 20px;font-size: 12px;color: #A0A0A0;clear: both;}
 #new_hero li,#skin li{width: 81px;height: 165px}
 #new_hero .new_hero_mark,#skin .skin_mark{width: 76px;height: 165px;position: absolute;top:0;left: 0;background:  #36AB87;opacity:0.8;filter: alpha(opacity=80);display: none}
 #new_hero .new_hero_right,#skin .skin_right{width: 76px;color: #26F2C8}
 #new_hero .new_hero_text1,#skin .skin_text1{text-align: center;position: absolute;top: 35px;left: 0;width: 76px;color: #ffffff;font-size: 13px;font-family: 微软雅黑;display: none}
 #new_hero .new_hero_text2,#skin .skin_text2{text-align: center;position: absolute;top: 60px;left: 0;width: 76px;color: #26F2C8;font-size: 12px;font-family: 微软雅黑;display: none}
 #hero_content .hero_content1{display: none}
-#enter{width: 400px;margin-top: 91px}
+#enter{width: 400px;margin-top: 31px;height: 112px}
 #enter_header{position:relative;text-indent:35px;width: 400px;height: 50px;margin-bottom: 10px;font-size: 26px;line-height: 50px;font-weight: 600;
     font-family: "微软雅黑";color: #555555;background: url(../img/enter.gif) no-repeat;background-position:0 12px;clear: both}
 #enter_content li{width: 100px;height: 72px;float: left;position: relative}
 #enter_content .enter_li{width: 94px}
+#enter_content .enter_back{width: 94px;height: 65px;background-color: #FEFEFE;}
 #enter_content .enter_mark{width: 94px;height: 65px;background-color: #FEFEFE;position: absolute;z-index: 3;opacity: 0;filter: alpha(opacity=0)}
 #enter_content  img{position: absolute;top: 10px;left: 31px}
 #enter_content img:nth-child(2){display: none}
-#enter_content>img+img{display: none}/**兼容IE8、7**/
+#enter_content li a>img+img{display: none}/**兼容IE8、7**/
 #enter_content .enter_text{position: absolute;top: 45px;left: 20px;font-size: 13px;font-family: 微软雅黑;color: #555555}
-#activity{width: 400px;margin-top: 180px;clear: both}
+#activity{width: 400px;margin-top: 34px;*margin-top: 125px;clear: both}
 #activity_header{position:relative;text-indent:40px;width: 400px;height: 50px;margin-bottom: 10px;font-size: 26px;line-height: 50px;font-weight: 600;
     font-family: "微软雅黑";color: #555555;background: url(../img/activity.gif) no-repeat;background-position:6px 11px}
 #activity_header span{position:absolute;text-align: center;height: 26px;line-height:26px;border-radius: 15px;display: block;top:12px;background: #EFEFEF;text-indent: 0;right: 0px;width: 100px}
@@ -262,7 +263,7 @@ img{border: none;}
 #activity_contentR .li2:hover{background:#E3E3E3;}
 #activity_contentR .state1{background:#36AB87;color: #ffffff;}
 #activity_contentR .state2{background:#E3E3E3;color: #9A9898;}
-#qq_yuyin{margin-top: 250px;clear: both}
+#qq_yuyin{margin-top: 50px;clear: both}
 /**网页尾部**/
 #footer{clear: both;width: 100%}
 #footer_1{width: 1240px;margin: 120px auto 20px auto;border-bottom: 3px solid #D0D0D0;padding-bottom: 15px;min-height: 66px}

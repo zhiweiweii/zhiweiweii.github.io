@@ -177,7 +177,18 @@ $(document).ready(function(){
             $(this).parent().find("div").removeClass("hero_on");
             $(this).addClass("hero_on");
             $("#hero_content").children().hide();
-            $("#hero_content").children(":nth-child("+parseInt($(this).index()+1)+")").show();
+          // $("#hero_content").children(":nth-child("+parseInt($(this).index()+1)+")").show();
+            var i=$(this).index();
+            console.log(i);
+            if(i==0){
+                $("#hero1").show();
+            }
+            if(i==1){
+                $("#new_hero").show();
+            }
+            if(i==2){
+                $("#skin").show();
+            }
         }
     });
     $("#hero1 .hero1_cover,#skin .skin_cover").mouseover(function(){
@@ -206,7 +217,7 @@ $(document).ready(function(){
         $(this).parent().find(".new_hero_text2").hide();
     });
     //快速入口处
-     $("#enter_content .enter_mark").mouseover(function(){
+    $("#enter_content .enter_mark").mouseover(function(){
         $(this).parent().find(".enter_text").css({"color":"#36AB87"});
      //   $(this).parent().find("img").attr({"src":"img/enter_"+parseInt($(this).parent().parent().index()+1)+"1.gif"});
         $(this).parent().find("img:nth-child(1)").css({"display":"none"});
@@ -249,6 +260,7 @@ $(document).ready(function(){
         $("#video_show").hide();
         $("#video_show video")[0].pause();
     });
+
 
 
 });
