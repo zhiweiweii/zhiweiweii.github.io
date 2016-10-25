@@ -1,0 +1,164 @@
+*{margin: 0;padding: 0;font-size: 18px}
+#index_back{background: url(../img/back.jpg) no-repeat;background-size:100% 100%;height:1050px;width: 100%;position: absolute;top:0;left: 0;z-index: 2;}
+#index img{width: 160px;height: 200px;}
+#index{position: absolute;left:50%;width: 160px;height: 160px;margin-left:-80px;top:-160px;border-radius: 80px;overflow: hidden;z-index: 3}
+#information{position:absolute;left: 50%;top: 53%;text-align: center;width: 350px;margin-left:-170px;z-index: 3}
+#motto{font-family: 宋体;font-size: 23px;font-weight: bold;width: 350px;text-align: center;border-bottom: 2px solid #aaa;padding-bottom: 10px;display: none}
+#simple_information{text-align: center;width: 350px;position: relative;height: 100px;overflow: hidden}
+#simple_information p{height: 30px;line-height: 30px;font-size:15px;font-family: 宋体;font-weight: 600;position: absolute;}
+#simple_information p:nth-child(1){left: 40%;top: 100px}
+#simple_information p:nth-child(2){left: 42%;top: 100px}
+#simple_information p:nth-child(3){left: 22%;top: 100px}
+#page{background: url(../img/back2.jpg) repeat;background-size:100% 100%;width: 100%;height: 100%;z-index: -10;}
+#header{height: 80px;width: 100%;position: relative;background: rgba(121,121,121,.3);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4Ccccccc,endColorstr=#4Ccccccc);}
+#header_div1 span{color:black;height: 80px;line-height: 80px;font-size: 16px;width: 80px;text-align: center;display: inline-block;_zoom:1;*display:inline;}
+#header_div1 .bold{font-size: 30px;font-weight: bold}
+#header_div1 .ash{color: #888}
+#header_div1{position: absolute;left: 90px;top: 10px}
+#header_right{float: right;margin-right: 40px}
+#header_right li{line-height: 80px;height: 80px;width:100px;list-style: none;display: inline-block;_zoom:1;*display:inline;text-align: center;cursor: pointer;}
+#header_right li a{text-decoration: none;color: #000;font-size: 18px;}
+#content{margin: 0 auto;width: 840px;}
+#basic_information{width: 840px;height: 200px;border-radius: 30px;margin-top: 25px;position:relative;background: rgba(160,160,180,.6);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#28A0A0B4,endColorstr=#28A0A0B4);z-index: 1}
+#basic_information div:not(:last-child){width: 80px;height: 80px;border-radius: 40px;background: #fff;overflow: hidden;position: relative;display: inline-block;z-index: 1}
+#basic_information div:nth-child(1){top:40px;left: 104px}
+#basic_information div:nth-child(2){top:40px;left: 204px}
+#basic_information div:nth-child(3){top:40px;left: 304px}
+#basic_information div:nth-child(4){top:40px;left: 404px}
+#basic_information img{top: 2px;width: 75px;height: 75px;left: 2px;position: absolute}
+#basic_information .text_information{position: absolute;top:135px;}
+#basic_information .text_information ul{display: inline-block;cursor: pointer;width: 40px}
+#basic_information .text_information ul:nth-child(1){margin-left: 120px;}
+#basic_information .text_information ul:nth-child(2){margin-left: 141px;}
+#basic_information .text_information ul:nth-child(3){margin-left: 141px;}
+#basic_information .text_information ul:nth-child(4){margin-left: 141px;}
+#basic_information .text_information li{height: 30px;line-height: 30px;text-align: center;list-style: none;color: #fff}
+#basic_information div .mark{position: absolute;top: 0px;background-color: #4a0000;width: 80px;height: 80px;left: 0px;z-index:100;opacity: 0;filter: alpha(opacity=0);cursor: pointer}
+#introduce{width: 840px;height: 190px;margin-top: 25px}
+#introduce div{float: left}
+#introduce_left{width: 52px}
+#introduce_middle{width: 676px;text-align: center;padding:10px 30px;line-height: 40px;font-size: 20px}
+#introduce_right{width: 52px;padding-top: 138px}
+#skill{width: 840px;height: 150px;margin-top: 35px;position: relative}
+#skill h1{text-align: center;font-size: 22px}
+#skill .floatdiv{float: left}
+#skill_left{width: 52px}
+#skill_middle{width: 736px}
+#skill_right{width: 52px;padding-top: 98px}
+#skill_middle div{width: 176px;text-align: center;margin-top: 15px;display: inline-block;_zoom:1;*display:inline;z-index: 2;}
+.wenjian{cursor: pointer}
+#show_div div{width: 300px;height: 120px;position: absolute;border-radius: 10px;background:#A0A0B4;top: 185px;display: none;padding-left:40px;z-index: 20}
+#show_div div li{line-height: 30px;height: 30px;font-size: 18px}
+#show_div div:nth-child(1){left: -28px}
+#show_div div:nth-child(2){left: 149px}
+#show_div div:nth-child(3){left: 335px}
+#show_div div:nth-child(4){left: 518px}
+#production{width: 840px;height: 150px;margin-top: 75px;text-align: center}
+#production_left{width: 52px}
+#production_middle{width: 734px;position: relative}
+#production_right{width: 52px;padding-top: 98px}
+#production .floatdiv{float: left}
+#production h1{text-align: center;font-size: 22px}
+#production_middle img{cursor: pointer}
+#production_middle div{border-radius: 50px;display: inline-block;width: 100px;height: 100px;overflow: hidden;marging-top: 20px;
+    margin-right: 40px;margin-left: 40px;position: relative;top:30px}
+#production_middle .show{width: 100px;height: 100px;line-height:100px;position: absolute;top: 100px;left: -40px;
+    text-align:center;cursor: pointer;font-weight: bold;color:black;background: rgba(255,0,0,.4);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#3cff0000,endColorstr=#3cff0000)}
+#production_middle .mark2{width: 100px;height: 100px;line-height:100px;position: absolute;z-index:2;top: 0px;left: -40px;
+    text-align:center;cursor: pointer;font-weight: bold;color:black;background: #fff;opacity: 0;filter: alpha(opacity=0);}
+#footer{margin-top: 70px;text-align: center;}
+#footer div{font-size: 4px;color: #656565;margin-top: 4px;font-family: 宋体}
+
+/*动画*/
+/*头像的移动缩小*/
+@keyframes myfirst
+{
+    to {transform: scale(0.4,0.4);left: 50px;top: -40px}
+}
+@-moz-keyframes myfirst /* Firefox */
+{
+    to {transform: scale(0.4,0.4);left: 50px;top: -40px}
+}
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+    to {transform: scale(0.4,0.4);left: 50px;top: -40px}
+}
+@-o-keyframes myfirst /* Opera */
+{
+    to {transform: scale(0.4,0.4);left: 50px;top: -40px}
+}
+
+.scale{
+    animation: myfirst 2s;
+    -moz-animation: myfirst 2s;	/* Firefox */
+    -webkit-animation: myfirst 2s;	/* Safari 和 Chrome */
+    -o-animation: myfirst 2s;	/* Opera */
+    animation-fill-mode : forwards;
+    -moz-animation-fill-mode : forwards;
+    -webkit-animation-fill-mode : forwards;
+    -o-animation-fill-mode : forwards;
+}
+
+/*文件的放大缩小*/
+@keyframes wjfangda
+{
+    to {transform: scale(1.8,1.8);}
+}
+@-moz-keyframes wjfangda /* Firefox */
+{
+    to {transform: scale(1.8,1.8);}
+}
+@-webkit-keyframes wjfangda /* Safari 和 Chrome */
+{
+    to {transform: scale(1.8,1.8);}
+}
+@-o-keyframes wjfangda /* Opera */
+{
+    to {transform: scale(1.8,1.8);}
+}
+.wj_scale1{
+    animation: wjfangda 0.5s;
+    -moz-animation: wjfangda 0.5s;	/* Firefox */
+    -webkit-animation: wjfangda 0.5s;	/* Safari 和 Chrome */
+    -o-animation: wjfangda 0.5s;	/* Opera */
+    animation-fill-mode : forwards;
+    -moz-animation-fill-mode : forwards;
+    -webkit-animation-fill-mode : forwards;
+    -o-animation-fill-mode : forwards;
+}
+
+@keyframes wjsuoxiao
+{
+    from {transform: scale(1.8,1.8)}
+    to {transform: scale(1,1)}
+}
+@-moz-keyframes wjsuoxiao /* Firefox */
+{
+    from {transform: scale(1.8,1.8)}
+    to {transform: scale(1,1)}
+}
+@-webkit-keyframes wjsuoxiao /* Safari 和 Chrome */
+{
+    from {transform: scale(1.8,1.8)}
+    to {transform: scale(1,1)}
+}
+@-o-keyframes wjsuoxiao /* Opera */
+{
+    from {transform: scale(1.8,1.8)}
+    to {transform: scale(1,1)}
+}
+.wj_scale2{
+    animation: wjsuoxiao 0.5s;
+    -moz-animation: wjsuoxiao 0.5s;	/* Firefox */
+    -webkit-animation: wjsuoxiao 0.5s;	/* Safari 和 Chrome */
+    -o-animation: wjsuoxiao 0.5s;	/* Opera */
+    animation-fill-mode : forwards;
+    -moz-animation-fill-mode : forwards;
+    -webkit-animation-fill-mode : forwards;
+    -o-animation-fill-mode : forwards;
+}
+
+
