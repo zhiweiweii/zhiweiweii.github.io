@@ -256,9 +256,9 @@ img{border: none;}
 #activity_contentL .L_mark_content{padding:5px 10px 5px 10px;font-size: 13px;color:#ffffff;line-height: 20px;font-family: 微软雅黑}
 #activity_contentL .L_mark_footer{padding:5px 10px 5px 10px;font-size: 17px;color:#ffffff;font-weight: bold;text-align: center}
 #activity_contentR ul{margin-top: 3px;margin-left: 16px}
-#activity_contentR li{height: 20px;line-height:20px;margin-top: 5px;border-radius: 10px;text-indent: 4px}
-#activity_contentR  .R_text{width: 160px;overflow: hidden;display: block;height: 20px;line-height:20px;color:#333333;float: left}
-#activity_contentR  .R_state{width:60px;display: block;float: right ;line-height: 20px;height: 20px;border-radius: 10px;text-align: center; }
+#activity_contentR li{height: 20px;margin-top: 5px;border-radius: 10px;text-indent: 4px;vertical-align:top}/**vertical-align:top解决在IE6/7下li会向下产生大约2px的外边距的问题**/
+#activity_contentR  .R_text{width: 160px;overflow: hidden;display: block;height: 20px;line-height:20px;color:#333333;float: left;font-size: 14px}
+#activity_contentR  .R_state{width:60px;display: block;float: right ;line-height: 20px;height: 20px;border-radius: 10px;text-align: center;font-size: 14px }
 #activity_contentR li:hover{background:#36AB87;}
 #activity_contentR .li2:hover{background:#E3E3E3;}
 #activity_contentR .state1{background:#36AB87;color: #ffffff;}

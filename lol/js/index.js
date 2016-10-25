@@ -179,7 +179,6 @@ $(document).ready(function(){
             $("#hero_content").children().hide();
           // $("#hero_content").children(":nth-child("+parseInt($(this).index()+1)+")").show();
             var i=$(this).index();
-            console.log(i);
             if(i==0){
                 $("#hero1").show();
             }
