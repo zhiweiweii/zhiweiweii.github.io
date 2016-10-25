@@ -208,10 +208,10 @@ $(document).ready(function(){
     //快速入口处
     $("#enter_content .enter_mark").mouseover(function(){
         $(this).parent().find(".enter_text").css({"color":"#36AB87"});
-        $(this).parent().find("img").attr({"src":"img/enter_"+parseInt($(this).parent().parent().index()+1)+"1.png"});
+        $(this).parent().find("img").attr({"src":"img/enter_"+parseInt($(this).parent().parent().index()+1)+"1.gif"});
     }).mouseout(function(){
             $(this).parent().find(".enter_text").css({"color":"#555555"});
-        $(this).parent().find("img").attr({"src":"img/enter_"+parseInt($(this).parent().parent().index()+1)+".png"});
+        $(this).parent().find("img").attr({"src":"img/enter_"+parseInt($(this).parent().parent().index()+1)+".gif"});
         }
     );
     //活动中心
