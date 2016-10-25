@@ -233,6 +233,8 @@ img{border: none;}
 #enter_content .enter_li{width: 94px}
 #enter_content .enter_mark{width: 94px;height: 65px;background-color: #FEFEFE;position: absolute;z-index: 3;opacity: 0;filter: alpha(opacity=0)}
 #enter_content  img{position: absolute;top: 10px;left: 31px}
+#enter_content img:nth-child(2){display: none}
+#enter_content>img+img{display: none}/**兼容IE8、7**/
 #enter_content .enter_text{position: absolute;top: 45px;left: 20px;font-size: 13px;font-family: 微软雅黑;color: #555555}
 #activity{width: 400px;margin-top: 180px;clear: both}
 #activity_header{position:relative;text-indent:40px;width: 400px;height: 50px;margin-bottom: 10px;font-size: 26px;line-height: 50px;font-weight: 600;
