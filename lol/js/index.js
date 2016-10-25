@@ -206,12 +206,16 @@ $(document).ready(function(){
         $(this).parent().find(".new_hero_text2").hide();
     });
     //快速入口处
-    $("#enter_content .enter_mark").mouseover(function(){
+     $("#enter_content .enter_mark").mouseover(function(){
         $(this).parent().find(".enter_text").css({"color":"#36AB87"});
-        $(this).parent().find("img").attr({"src":"img/enter_"+parseInt($(this).parent().parent().index()+1)+"1.gif"});
+     //   $(this).parent().find("img").attr({"src":"img/enter_"+parseInt($(this).parent().parent().index()+1)+"1.gif"});
+        $(this).parent().find("img:nth-child(1)").css({"display":"none"});
+        $(this).parent().find("img:nth-child(2)").css({"display":"block"});
     }).mouseout(function(){
             $(this).parent().find(".enter_text").css({"color":"#555555"});
-        $(this).parent().find("img").attr({"src":"img/enter_"+parseInt($(this).parent().parent().index()+1)+".gif"});
+   //     $(this).parent().find("img").attr({"src":"img/enter_"+parseInt($(this).parent().parent().index()+1)+".gif"});
+            $(this).parent().find("img:nth-child(2)").css({"display":"none"});
+            $(this).parent().find("img:nth-child(1)").css({"display":"block"});
         }
     );
     //活动中心
