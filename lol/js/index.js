@@ -259,7 +259,4 @@ $(document).ready(function(){
         $("#video_show").hide();
         $("#video_show video")[0].pause();
     });
-
-
-
 });

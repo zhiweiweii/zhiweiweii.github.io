@@ -4,34 +4,34 @@ li{list-style: none}
 body{background:#F7F8F8}
 img{border: none;}
 #header{height: 88px;background: #000;margin-bottom: 0;min-width: 1240px;width: 100%}
-#header1{position: relative;}
+#header1{position: relative;z-index: 10}
 #header1 .header1_ul{width: 1000px;margin: 0 auto;left:95px;position: relative;}
 #header1 .header1{display: block;float:left;text-align: center;line-height: 25px;padding-left:75px;padding-top: 20px}
 #header1 .header1 a{color:#fff;font-size: 16px;}
-#header1_mark{display:none;z-index:2;width: 100%;min-width: 1240px;height:234px;position: absolute;top:88px;left: 0;background: #000;opacity: 0.7;filter:alpha(opacity=70)}
-#header_detail{display:none;position: absolute;top:108px;left: 0;height:234px;width: 1100px;z-index: 3}
+#header_detail{display:none;position: absolute;top:108px;left: 0;height:234px;width: 1100px;}
 #header_detail li{height: 30px;line-height: 30px;text-align: center;}
 #header_detail a{color: #fff;font-size: 14px;}
 #header_detail a:hover{color: #16C2A2}
-#header_detail ul{position: absolute;}
+#header_detail ul{position: absolute;top: 0px;}
 #header_detail ul:nth-child(1){left: 198px}
 #header_detail ul:nth-child(2){left: 355px}
 #header_detail ul:nth-child(3){left: 503px}
 #header_detail ul:nth-child(4){left: 623px}
 #header_detail ul:nth-child(5){left: 758px}
 #header_detail ul:nth-child(6){left: 899px}
-#header_detail>ul{left: 198px} /**IE7、8兼容**/
-#header_detail>ul+ul{left: 355px} /**IE7、8兼容**/
+#header_detail>ul{left: 198px;} /**IE7、8兼容**/
+#header_detail>ul+ul{left: 355px;} /**IE7、8兼容**/
 #header_detail>ul+ul+ul{left: 503px} /**IE7、8兼容**/
 #header_detail>ul+ul+ul+ul{left: 623px} /**IE7、8兼容**/
 #header_detail>ul+ul+ul+ul+ul{left: 758px} /**IE7、8兼容**/
-#header_detail>ul+ul+ul+ul+ul+ul{left: 899px}
+#header_detail>ul+ul+ul+ul+ul+ul{left: 899px} /**IE7、8兼容**/
+#header1_mark{display:none;z-index:2;width: 100%;min-width: 1240px;height:234px;position: absolute;top:88px;left: 0;background: #000;opacity: 0.7;filter:alpha(opacity=70)}
 #header span{color:#575757;display: block;font-size:12px}
-#video_wrapper{min-width: 1240px;position:absolute;height: 614px;top:88px;left: 0;width: 100%;overflow: hidden}
+#video_wrapper{min-width: 1240px;position:absolute;height: 614px;top:88px;left: 0;width: 100%;overflow: hidden;z-index: -1}
 #video_wrapper video{position: absolute;top: 0;min-width: 1240px;left: -960px;height: 614px;margin: 0 50%}
 #video_wrapper img{position: absolute;top: 0;min-width: 1240px;left: -960px;height: 614px;margin: 0 50%}
 #header2{width:1240px;margin: 0 auto;height: 614px;position: relative}
-#logo{position: absolute;top:-73px;left: -10px;z-index: 3}
+#logo{position: absolute;top:-73px;left: -10px;z-index: 10}
 #header2_title{position: absolute;top:120px;left: 0}
 #header2_title p:nth-child(1){color:#14E2C6;font-size: 40px;font-weight: bold;height: 50px;line-height: 50px;font-family: "微软雅黑 Light";margin-bottom: 10px}
 #header2_title p:nth-child(2){color:#fff;width:500px;line-height: 30px;font-size: 14px}
@@ -70,7 +70,7 @@ img{border: none;}
 #header2_nav .grad1 span:nth-child(3){font-size:12px;-webkit-transform:scale(1);color: #aaa;}
 #header2_nav .grad1>span{color: #fff;font-size:18px}/**IE7、8兼容**/
 #header2_nav .grad1>span+span{font-size:12px;-webkit-transform:scale(1);color: #aaa;}/**IE7、8兼容**/
-#header2_nav .grad1 a div{width: 112px;height: 115px;position: absolute;top: 0;left: 0;background: #fff;opacity: 0;filter:alpha(opacity=0);}
+#header2_nav .grad1 a div{width: 112px;height: 115px;position: absolute;top: 0;left: 0;background: #fff;opacity: 0;filter:alpha(opacity=0);cursor: pointer;}
 #header2_nav .grad1 a div:hover{opacity: 0.1;filter:alpha(opacity=10);}
 #login{
     width: 460px;height: 115px;float: left;
