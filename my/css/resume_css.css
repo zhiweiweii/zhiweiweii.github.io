@@ -70,7 +70,7 @@
 #production_middle .mark2{width: 100px;height: 100px;line-height:100px;position: absolute;z-index:2;top: 0px;left: -40px;
     text-align:center;cursor: pointer;font-weight: bold;color:black;background: #fff;opacity: 0;filter: alpha(opacity=0);}
 #footer{margin-top: 70px;text-align: center;}
-#footer div{font-size: 4px;color: #656565;margin-top: 4px;font-family: 宋体}
+#footer div{font-size: 12px;color: #656565;margin-top: 4px;font-family: 宋体}
 #page{display: none}
 /*动画*/
 /*头像的移动缩小*/
