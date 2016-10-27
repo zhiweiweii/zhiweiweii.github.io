@@ -1,5 +1,5 @@
 *{margin: 0;padding: 0;font-size: 18px}
-#index_back{background: url(../img/back2.jpg) repeat;background-size:100% 100%;height:1050px;width: 100%;position: absolute;top:0;left: 0;z-index: 2;}
+#index_back{background: url(../img/back2.jpg) repeat-y;background-size:100% 100%;height:1050px;width: 100%;position: absolute;top:0;left: 0;z-index: 2;}
 #index img{width: 160px;height: 200px;}
 #index{position: absolute;left:50%;width: 160px;height: 160px;margin-left:-80px;top:-160px;border-radius: 80px;overflow: hidden;z-index: 3}
 #information{position:absolute;left: 50%;top: 53%;text-align: center;width: 350px;margin-left:-170px;z-index: 3}
@@ -71,7 +71,7 @@
     text-align:center;cursor: pointer;font-weight: bold;color:black;background: #fff;opacity: 0;filter: alpha(opacity=0);}
 #footer{margin-top: 70px;text-align: center;}
 #footer div{font-size: 4px;color: #656565;margin-top: 4px;font-family: 宋体}
-
+#page{display: none}
 /*动画*/
 /*头像的移动缩小*/
 @keyframes myfirst

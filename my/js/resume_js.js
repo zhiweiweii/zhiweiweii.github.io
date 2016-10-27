@@ -26,7 +26,7 @@ window.onload=function(){
     $("#motto").fadeIn(1500,function(){
         $("#simple_information p:nth-child(1)").animate({"top":"10px"},300,function(){
             $("#simple_information p:nth-child(2)").animate({"top":"40px"},300,function(){
-                $("#simple_information p:nth-child(3)").animate({"top":"70px"},300,function(){flag=true});
+                $("#simple_information p:nth-child(3)").animate({"top":"70px"},300,function(){flag=true;$("#page").show()});
             });
         });
     });
