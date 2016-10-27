@@ -251,12 +251,12 @@ $(document).ready(function(){
     $("#header2_video .video_mark").click(function(){
         $("#video_show_mark").show();
         $("#video_show").show();
-        $("#video_show video")[0].load();
         $("#video_show video")[0].play();
     });
     $("#video_show img").click(function(){
         $("#video_show_mark").hide();
         $("#video_show").hide();
+        $("#video_show video")[0].load();
         $("#video_show video")[0].pause();
     });
 });
