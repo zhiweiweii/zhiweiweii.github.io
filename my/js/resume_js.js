@@ -114,7 +114,7 @@ window.onload=function(){
         $(this).addClass("wj_scale2");
     });
     //点击skill
-    $(".wenjian").click(function(){
+    $(".wenjian").click(function(e){
         var i=parseInt($(this).parent().index())+1;
         if($(this).parent().children(":nth-child(3)").find("img").attr("src")=="img/xiangxia.gif"){
             $(this).parent().children(":nth-child(3)").find("img").attr("src","img/xiangshang.gif");
@@ -129,7 +129,18 @@ window.onload=function(){
             $(this).parent().children(":nth-child(3)").find("img").attr("src","img/xiangxia.gif");
             $("#show_div div:nth-child("+i+")").slideDown();
         }
+        e.stopPropagation();
     });
+    $("body").click(function(){
+        $("#show_div div").slideUp();
+        $(".wenjian").parent().children(":nth-child(3)").find("img").attr("src","img/xiangshang.gif");
+    });
+    $("#show_div div").click(function(e){
+        $(this).show();
+        e.stopPropagation();
+    });
+
+    //个人作品处
     $(".mark2").mouseover(function(){
         $(this).parent().children(":nth-child(2)").stop(true,false).animate({top:0},200);
     }).mouseout(function(){
