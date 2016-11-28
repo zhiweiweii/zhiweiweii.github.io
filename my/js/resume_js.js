@@ -58,6 +58,14 @@ window.onload=function(){
             $("#index").addClass("scale");
         }
     }
+    //自动切换界面
+    function auto(){    
+        index_back.fadeOut(2000);
+            index_back.style.background="none";
+            info.style.display="none";
+            $("#index").addClass("scale");      
+    }
+    setTimeout(auto,7000);
     //头部右边
     $("#header_right ul li").mouseover(function(){
             $(this).css({"border-bottom":"2px solid #33CCFF"});
