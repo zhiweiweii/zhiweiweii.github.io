@@ -52,7 +52,7 @@ window.onload=function(){
     var info=document.getElementById("information");
     index_back.onclick=function(){
         if(flag==true){
-        this.style.display="none";
+        $(this).fadeOut(3000);
             this.style.background="none";
             info.style.display="none";
             $("#index").addClass("scale");
