@@ -64,7 +64,7 @@ window.onload=function(){
             info.style.display="none";
             $("#index").addClass("scale");      
     }
-    setTimeout(autoindex,6000);
+    setTimeout(autoindex,5000);
     //头部右边
     $("#header_right ul li").mouseover(function(){
             $(this).css({"border-bottom":"2px solid #33CCFF"});
