@@ -60,7 +60,7 @@ window.onload=function(){
     }
     //自动切换界面
     function autoindex(){    
-        $("index_back").fadeOut(3000);
+        $("#index_back").fadeOut(3000);
             info.style.display="none";
             $("#index").addClass("scale");      
     }
