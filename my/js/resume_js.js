@@ -59,13 +59,13 @@ window.onload=function(){
         }
     }
     //自动切换界面
-    function auto(){    
+    function autoindex(){    
         $("index_back").fadeOut(2000);
-            index_back.style.background="none";
+        index_back.style.display="none";
             info.style.display="none";
             $("#index").addClass("scale");      
     }
-    setTimeout(auto,7000);
+    setTimeout(autoindex,7000);
     //头部右边
     $("#header_right ul li").mouseover(function(){
             $(this).css({"border-bottom":"2px solid #33CCFF"});
