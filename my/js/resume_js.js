@@ -66,7 +66,7 @@ window.onload=function(){
         //个人信息栏运动一次
         setTimeout(1500,function(){
             for(var i=0;i<4;i++){
-                info_move($("#basic_information").find("img")[i]);
+                info_move($("#basic_information").find("img")[0]);
             }
         });
     }
