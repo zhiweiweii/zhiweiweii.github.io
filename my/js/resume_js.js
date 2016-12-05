@@ -53,10 +53,16 @@ window.onload=function(){
     index_back.onclick=function(){
         if(flag==true){
         $(this).fadeOut(3000);
-            this.style.background="none";
+            
             info.style.display="none";
             $("#index").addClass("scale");
         }
+        //个人信息栏运动一次
+        setTimeout(function(){
+            for(var i=0;i<4;i++){
+                info_move($("#basic_information").find("img")[i]);
+            }
+        },1500);
     }
     //自动切换界面
     function autoindex(){    
