@@ -64,11 +64,11 @@ window.onload=function(){
             info.style.display="none";
             $("#index").addClass("scale"); 
         //个人信息栏运动一次
-        setTimeout(1500,function(){
+        setTimeout(function(){
             for(var i=0;i<4;i++){
-                info_move($("#basic_information").find("img")[0]);
+                info_move($("#basic_information").find("img")[i]);
             }
-        });
+        },1500);
     }
     setTimeout(autoindex,5000);
     //头部右边
