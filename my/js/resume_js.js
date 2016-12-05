@@ -111,7 +111,7 @@ window.onload=function(){
                 }
             }, 10)
         }
-    info_move($("#basic_information").find("img"));
+    info_move($("#basic_information").find("img")[0]);
 
     //skill的放大缩小
     $(".wenjian").mouseover(function(){
