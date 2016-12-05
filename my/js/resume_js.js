@@ -62,7 +62,9 @@ window.onload=function(){
     function autoindex(){    
         $("#index_back").fadeOut(3000);
             info.style.display="none";
-            $("#index").addClass("scale");      
+            $("#index").addClass("scale"); 
+        //个人信息栏运动一次
+            info_move($("#basic_information").find("img")[0]);
     }
     setTimeout(autoindex,5000);
     //头部右边
@@ -111,7 +113,7 @@ window.onload=function(){
                 }
             }, 10)
         }
-    info_move($("#basic_information").find("img")[0]);
+    
 
     //skill的放大缩小
     $(".wenjian").mouseover(function(){
