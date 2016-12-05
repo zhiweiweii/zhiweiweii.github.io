@@ -64,7 +64,11 @@ window.onload=function(){
             info.style.display="none";
             $("#index").addClass("scale"); 
         //个人信息栏运动一次
-            info_move($("#basic_information").find("img")[0]);
+        setTimeout(1500;function(){
+            for(var i=0;i<4;i++){
+                info_move($("#basic_information").find("img")[i]);
+            }
+        });
     }
     setTimeout(autoindex,5000);
     //头部右边
