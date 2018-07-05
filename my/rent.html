@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+  <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+    }
+    .outDiv {
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      overflow-y: auto;
+      background-image: url('./bg.jpg');
+      background-size: 100% 100%;
+    }
+    .inDiv {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      width: 6rem;
+      padding: 30px;
+      display: none;
+    }
+    .inDiv div {
+      opacity: 0.85;
+      margin-left: -100%;
+      margin-right: 100%;
+      margin-bottom: 20px;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    .title {
+      text-align: center;
+      font-size: 16px;
+      color: #ccc83e;    
+      font-weight: bold;
+      padding-bottom:10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="outDiv">
+    <div class="inDiv">
+      <p class="title">租房推荐</p>
+      <div>
+        <button class="btn btn-success btn-block"><a href="http://dg.58.com/chuzu/?key=%E9%BB%84%E4%BC%9F%E5%BC%BA">顾问阿强推荐</a></button>
+      </div>
+      <div>
+        <button class="btn btn-info btn-block"><a href="http://dg.58.com/chuzu/?key=%E5%91%A8%E9%95%87%E5%A6%82">顾问小如推荐</a></button>
+      </div>
+      <div>
+        <button class="btn btn-success btn-block"><a href="http://dg.58.com/chuzu/?key=%E9%99%88%E7%BA%AF">顾问阿怡推荐</a></button>
+      </div>
+      <div>
+        <button class="btn btn-info btn-block"><a href="http://dg.58.com/chuzu/?key=%E5%91%A8%E6%98%A0%E9%A6%99">顾问香香推荐</a></button>
+      </div>
+      <div>
+        <button class="btn btn-success btn-block"><a href="http://esf.dg.fang.com/a/mai15999713230">顾问小麦推荐</a></button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(function () {
+    var deviceWidth = document.documentElement.clientWidth;
+    if (deviceWidth > 600) deviceWidth = 600;
+    document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+
+    $('.inDiv').fadeIn(500,'swing')
+    $('.inDiv div').animate({marginLeft:'0',marginRight:'0'},500);
+    $('.title').slideDown();
+  })
+  $(window).resize(function () {
+    var deviceWidth = document.documentElement.clientWidth;
+    if (deviceWidth > 600) deviceWidth = 600;
+    document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+  });
+</script>
+</html>
