@@ -30,7 +30,7 @@ var cntElem = $('#view')[0];
     var width = shareContent.offsetWidth; //获取dom 宽度
     var height = shareContent.offsetHeight; //获取dom 高度
     var canvas = document.createElement("canvas"); //创建一个canvas节点
-    var scale = 6; //定义任意放大倍数 支持小数
+    var scale = 5; //定义任意放大倍数 支持小数
     canvas.width = width * scale; //定义canvas 宽度 * 缩放
     canvas.height = height * scale; //定义canvas高度 *缩放
     canvas.getContext("2d").scale(scale, scale); //获取context,设置scale 
@@ -56,8 +56,8 @@ var cntElem = $('#view')[0];
         $('#box')[0].appendChild(img);
 
         $(img).css({
-            "width": canvas.width / 4 + "px",
-            "height": canvas.height / 4 + "px",
+            "width": canvas.width / 2 + "px",
+            "height": canvas.height / 2 + "px",
         });
 
     });
@@ -68,8 +68,8 @@ var cntElem = $('#view')[0];
         <img src="code.jpg" style="position:absolute;bottom:30px;right:30px;width: 80px;height: 80px;" />
         <img src="123.jpg"  style=" position: absolute;z-index: -1; width: 700px; height: 500px;" />
         <div  style=" width: 700px; height: 300px;">asssssssssssssssssssssskj但是开发计划的会计法会计师电话费会计师电话客服和速度快解放合适的空间划分会计师电话费打开手机好 </div>
-        <input type="button" value="截图" onclick="takeScreenshot()">
     </div>
+    <input type="button" style="position:absolute;left: 20px;top: 200px;" value="截图" onclick="takeScreenshot()">
     <div id="box" style="position: absolute;top:0;left: 800px;overflow: hidden; width: 300px;height: 300px;">
     </div>
 </body>
